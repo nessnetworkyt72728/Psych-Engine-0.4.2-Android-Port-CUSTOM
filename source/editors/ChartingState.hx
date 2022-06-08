@@ -221,9 +221,6 @@ class ChartingState extends MusicBeatState
 			_song = {
 				song: 'Test',
 				notes: [],
-				_song = {
-				song: 'Test',
-				notes: [],
 				bpm: 150.0,
 				needsVoices: true,
 				arrowSkin: '',
@@ -236,9 +233,9 @@ class ChartingState extends MusicBeatState
 				validScore: false
 			};
 		}
-		
-		if(curSection >= _song.notes.length) curSection = _song.notes.length - 1;
 
+		if(curSection >= _song.notes.length) curSection = _song.notes.length - 1;
+		
 		FlxG.mouse.visible = true;
 		FlxG.save.bind('funkin', 'ninjamuffin99');
 

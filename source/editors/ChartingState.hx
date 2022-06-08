@@ -221,21 +221,20 @@ class ChartingState extends MusicBeatState
 			_song = {
 				song: 'Test',
 				notes: [],
-				events: [],
+				_song = {
+				song: 'Test',
+				notes: [],
 				bpm: 150.0,
 				needsVoices: true,
 				arrowSkin: '',
-				splashSkin: 'noteSplashes',//idk it would crash if i didn't
+				splashSkin: '',
 				player1: 'bf',
 				player2: 'dad',
-				player3: null,
-				gfVersion: 'gf',
+				player3: 'gf',
 				speed: 1,
 				stage: 'stage',
 				validScore: false
 			};
-			addSection();
-			PlayState.SONG = _song;
 		}
 		
 		if(curSection >= _song.notes.length) curSection = _song.notes.length - 1;
